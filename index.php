@@ -2,7 +2,7 @@
    include ("NoRetro.php");
  ?> 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -41,63 +41,65 @@
      </div>
 </div>
     <div class="container">
-        <!--Barra de navegación con Boostrap-->
-        <nav class=" navbar navbar-expand-lg navbar-light sticky-top" style=" margin-top:10px; ; box-shadow: 1px 1px 5px #A09C9C; border-radius: 5px;">
-                <a class="navbar-brand" href="#">
-                <img src="icon.png" width="30" height="30" class="d-inline-block align-top" alt="Kaiseer">
-                Kaiser
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <!--Barra de navegación con Boostrap-->
+            <nav class=" navbar navbar-expand-lg navbar-light sticky-top" style=" margin-top:10px; ; box-shadow: 1px 1px 5px #A09C9C; border-radius: 5px;">
+                    <a class="navbar-brand" href="#">
+                        <img src="icon.png" width="30" height="30" class="d-inline-block align-top" alt="Kaiseer">
+                        Kaiser
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <!--<li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>-->
-                </ul>
-                <br>
-                <form class="form-inline my-2 my-lg-0">
-                    <a href="Login.php" class="btn btn-outline-primary mr-3">
-                        <i class="fas fa-sign-in-alt"></i>
-                        Iniciar</a>
-                    <a href="Registro.php" class="btn btn-outline-primary mr-3">
-                        <i class="fas fa-plus-square"></i>    
-                    Registrar</a>
-                </form>
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <!--<li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>-->
+                    </ul>
+                    <br>
+                    <form class="form-inline my-2 my-lg-0">
+                        <a href="Login.php" class="btn btn-outline-primary mr-3">
+                            <i class="fas fa-sign-in-alt"></i>
+                            Iniciar</a>
+                            <a href="Registro.php" class="btn btn-outline-primary mr-3">
+                                <i class="fas fa-plus-square"></i>    
+                                Registrar</a>
+                            </form>
                 </div>
-        </nav>
-        <div class="cover-container">
-            <header class="cover-container d-flex w-100 h-100 p-3 mx-auto flex column">
-                <main class="inner cover" role="main">
-                    <h1 class="cover-heading">Kaiser</h1>
-                    <p class="lead">Bienvenidos a Kaiser página de registro de accidentes</p>
-                    <a href="" class="btn btn-lg btn-secondary">Registrar</a>
-                </main>
-            </header>
-        </div>
-        <!--Fin del navbar-->
-        <!--Contenido-->
-        <!-- Comento código para mejora de interfaz de usua -->
-        <!-- <section class="container contenido" style="height:600px;">
-
-            <h1 style="margin-top:20px;">Kaiser</h1>
-            <div style="margin-top: 20px;">
-                <img src="imgs/kai.png" alt="" class="rounded img-fluid" width="500px" height="600px" style="float:left; margin-right:20px;">
+            </nav>
+            <p class="EspacioBlanco"></p>
+            <div style="text-align:center;">
+                <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex column">
+                    <main class="inner cover" role="main">
+                        <h1 class="cover-heading">Kaiser</h1>
+                        <p class="lead">Bienvenidos a Kaiser página de registro de accidentes</p>
+                        <a href="" class="btn btn-lg btn-secondary">Registrar</a>
+                        <p class="EspacioBlanco"></p>
+                    </main>
+                </div>
+            </div>    
+            <!--Fin del navbar-->
+            <!--Contenido-->
+            <!-- Comento código para mejora de interfaz de usua -->
+            <!-- <section class="container contenido" style="height:600px;">
                 
-                <p style="text-align: justify;"> Kaiser te ayuda a identificar los puntos donde ocurre una gran tasa de 
-                    accidentalidad en las vias.<br>
-                    Te ayudamos a identificar con nuestro mapa dinámico los puntos de accidente.<br>
-                    Estos puntos los proporcionan usuarios como tú llenando un formulario que en un par de clicks esta.<br>
-                    Con nuestra sencilla interfaz no creo que te compliques y ahora que esperes registrate y empieza a ayudar a esta comunidad
-                </p>     
+                <h1 style="margin-top:20px;">Kaiser</h1>
+                <div style="margin-top: 20px;">
+                    <img src="imgs/kai.png" alt="" class="rounded img-fluid" width="500px" height="600px" style="float:left; margin-right:20px;">
+                    
+                    <p style="text-align: justify;"> Kaiser te ayuda a identificar los puntos donde ocurre una gran tasa de 
+                        accidentalidad en las vias.<br>
+                        Te ayudamos a identificar con nuestro mapa dinámico los puntos de accidente.<br>
+                        Estos puntos los proporcionan usuarios como tú llenando un formulario que en un par de clicks esta.<br>
+                        Con nuestra sencilla interfaz no creo que te compliques y ahora que esperes registrate y empieza a ayudar a esta comunidad
+                    </p>     
             </div>
         </section> -->
         
@@ -116,7 +118,7 @@
             </div>
         </section>   -->
             <!-- <div class="card-deck col-sm-12 row" style="margin-top:20px;">
-                        
+                
                 <div class="card" style="width: 18rem;">
                             <img src="imgs/tel.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -142,14 +144,16 @@
                         </div>
                     </div>
             </div>    -->
-</div>
+        </div> <!-- final de container -->
         <!--Final Contenido-->
         <!-- Footer -->
-        <footer class="page-footer font-small">
+    <div class="container">
+        <footer class="footer mt-auto py-3">
             <div class="footer-copyright text-center py-3">© 2019 Copyright:
-            <a href="#"> Kaiser</a>
+                <a href="#"> Kaiser</a>
             </div>
         </footer>
+    </div>
       <!-- Footer -->
         <!--Scripts -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
