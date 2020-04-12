@@ -77,7 +77,8 @@
         
         <!--Fin del navbar-->
         <!--Contenido-->
-        <section class="container contenido" style="height:600px;">
+        <!-- Comento código para mejora de interfaz de usua -->
+        <!-- <section class="container contenido" style="height:600px;">
 
             <h1 style="margin-top:20px;">Kaiser</h1>
             <div style="margin-top: 20px;">
@@ -90,14 +91,9 @@
                     Con nuestra sencilla interfaz no creo que te compliques y ahora que esperes registrate y empieza a ayudar a esta comunidad
                 </p>     
             </div>
-        </section>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <section class=contenido2>
+        </section> -->
+        
+        <!-- <section class=contenido2>
 
         
             <h1>Mapa</h1>
@@ -110,15 +106,15 @@
                 </p>
                 
             </div>
-        </section>  
-            <div class="card-deck col-sm-12 row" style="margin-top:20px;">
+        </section>   -->
+            <!-- <div class="card-deck col-sm-12 row" style="margin-top:20px;">
                         
                 <div class="card" style="width: 18rem;">
                             <img src="imgs/tel.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Dispositivos</h5>
                                 <p class="card-text">Puedes visualizar nuestro servicio desde cualquier dispositivo inteligente que tengas a mano</p>
-                                <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                                
                             </div>
                         </div>
                         <div class="card" style="width: 18rem; ">
@@ -126,7 +122,6 @@
                             <div class="card-body">
                                 <h5 class="card-title">Fácil de Usar</h5>
                                 <p class="card-text">Con solo un par de click puedes enviar tu reporte.</p>
-                                <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
                             </div>
                         </div>
                         <div class="card" style="width: 18rem;" >
@@ -138,7 +133,7 @@
                             </div>
                         </div>
                     </div>
-            </div>   
+            </div>    -->
 </div>
         <!--Final Contenido-->
         <!-- Footer -->
