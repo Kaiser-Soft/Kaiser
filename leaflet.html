@@ -1,0 +1,55 @@
+<!DOCTYPE html><html>
+<meta charset="utf-8" />
+<head>
+    
+    
+	<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    
+    
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+
+ <style>
+  #map { 
+  widh: 50px;
+  height: 600px; }
+ </style>
+ 
+ </head>
+  <body>
+   <div id="map"></div>
+      
+      <script>
+          <!-- aqui empieza a pedir la ubicacion -->
+      if ("geolocation" in navigator){ //check Geolocation available 
+    //things to do
+}else{
+    console.log("Geolocation not available!");
+}
+
+if ("geolocation" in navigator){ //check geolocation available 
+    //try to get user current location using getCurrentPosition() method
+    navigator.geolocation.getCurrentPosition(function(position){ 
+            console.log("Found your location nLat : "+position.coords.latitude+" nLang :"+ position.coords.longitude);
+        });
+}else{
+    console.log("Browser doesn't support geolocation!");
+}
+          
+      </script>
+ <script>
+ 
+var map = L.map('map').
+setView([5.30667 , -73.8144], 
+15);
+ 
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
+    maxZoom: 18
+}).addTo(map);
+
+L.control.scale().addTo(map);
+<!--L.marker([5.30667, -73.8144], {draggable: true}).addTo(map);-->
+
+ </script>
+ </body> 
+ </html>
