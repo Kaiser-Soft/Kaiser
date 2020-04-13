@@ -78,8 +78,8 @@
             <div style="text-align:center;">
                 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex column">
                     <main class="inner cover" role="main">
-                        <h1 class="cover-heading">Kaiser</h1>
-                        <p class="lead">Bienvenidos a Kaiser página de registro de accidentes</p>
+                        <h1 class="cover-heading titulo-k">Kaiser</h1>
+                        <p class="lead parrafo-k">Bienvenidos a Kaiser página de registro de accidentes</p>
                         <a href="" class="btn btn-lg btn-secondary">Registrar</a>
                         <p class="EspacioBlanco"></p>
                     </main>

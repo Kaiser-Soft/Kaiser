@@ -220,8 +220,18 @@ body {
   padding: .75rem 1.25rem;
   font-weight: 700;
 }
-
-
+/* Titulo Kaiser & parrafo*/
+.titulo-k{
+    color: #ffffff;
+    font-weight: bolder;
+    text-decoration: solid 1px #000000;
+    text-shadow: 2px 2px 2px rgb(48, 42, 42);
+}
+.parrafo-k{
+    color: #ffffff;
+    text-decoration: solid 1px #000000;
+    text-shadow: 2px 2px 2px rgb(48, 42, 42);
+}
 /*
  * Footer
  */
