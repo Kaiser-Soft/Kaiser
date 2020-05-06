@@ -244,3 +244,11 @@ body {
 .EspacioBlanco{
     height: 10em;
 }
+.fondo-back {
+  background-color: #0c0b0b ;
+  opacity: 0.9;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+
