@@ -1,6 +1,33 @@
-<?php 
-   include ("NoRetro.php");
- ?>
+<?php
+    include 'include/conexion.php';
+
+    if($conect->connect_error){
+        die("Conexion fallida: " . $conect->connect_error);
+    }
+    $row;
+    $correo=$_POST["Email"];
+    $log = mysqli_query($conect,"SELECT * FROM registro WHERE email='$correo'");
+    if(mysqli_num_rows($log)>0){
+        $row=mysqli_fetch_array($log);
+        $correo=$row['email'];
+        echo '<script type="text/javascript">
+			alert("El e-mail ya esta registrado");
+			function redireccionar(){
+			  window.location="Registro.php";
+			} 
+			setTimeout ("redireccionar()", 1000);
+			</script>';
+    }else{
+        $sql="INSERT INTO `registro`(`email`, `Nombres`, `Apellidos`, `TipoDoc`, `NumDoc`, `NumTel`, `Password`)
+                             VALUES ('".$_POST["email"]."','".$_POST["nombres"]."','".$_POST["apellidos"]."','".$_POST["TipDoc"]."','".$_POST["documento"]."','".$_POST["celular"]."','".$_POST["password"]."')";
+        if(mysqli_query($conect, $sql)){
+            header('Location:login.php');
+            exit();
+        }else{
+            echo "ocurrió un error al registrarte, intentalo de nuevo mas tarde";
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -42,18 +69,18 @@
         <img src="icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
       </a>
     </nav>
-    <form class="formulario" method="post" action="Recibir.php">
+    <form class="formulario" method="post" action="registro.php">
 	       <h1 class="titulo-form">Registro</h1>
-	    	<input type="email" name="Email" placeholder="Email" class="inputs-inserts" required>
-	    	<input type="text" name="Nombres" placeholder="Nombres" class="inputs-inserts" required>
-	    	<input type="text" name="Apellidos" placeholder="Apellidos" class="inputs-inserts" required>
-	    	<select class="inputs-inserts" required name="TipDocu" value="Documento">
+	    	<input type="email" name="email" placeholder="Email" class="inputs-inserts" required>
+	    	<input type="text" name="nombres" placeholder="Nombres" class="inputs-inserts" required>
+	    	<input type="text" name="apellidos" placeholder="Apellidos" class="inputs-inserts" required>
+	    	<select class="inputs-inserts" required name="TipDocu" value="TipDoc">
 	    		<option value="CC" name="TipDocu">Cedula de Ciudadania</option>
 	    		<option value="TI" name="TipDocu">Tarjeta de identidad</option>
 	    		<option value="PS" name="TipDocu">Pasaporte</optlion>
 	    	</select>
-	    	<input type="text" name="NumDocumento" placeholder="Número de Documento" class="inputs-inserts" required>
-	    	<input type="text" name="NumCelular" placeholder="Número de Celular" class="inputs-inserts" required>
+	    	<input type="text" name="documento" placeholder="Número de Documento" class="inputs-inserts" required>
+	    	<input type="text" name="celular" placeholder="Número de Celular" class="inputs-inserts" required>
 	    	<input type="password" name="password" placeholder="Contraseña" class="inputs-inserts" required>
             <p class="text-termn"><input type="checkbox" class="input-check" required> Acepta terminos y condiciones</p>
 	    	

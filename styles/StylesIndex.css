@@ -220,18 +220,8 @@ body {
   padding: .75rem 1.25rem;
   font-weight: 700;
 }
-/* Titulo Kaiser & parrafo*/
-.titulo-k{
-    color: #ffffff;
-    font-weight: bolder;
-    text-decoration: solid 1px #000000;
-    text-shadow: 2px 2px 2px rgb(48, 42, 42);
-}
-.parrafo-k{
-    color: #ffffff;
-    text-decoration: solid 1px #000000;
-    text-shadow: 2px 2px 2px rgb(48, 42, 42);
-}
+
+
 /*
  * Footer
  */
@@ -244,11 +234,3 @@ body {
 .EspacioBlanco{
     height: 10em;
 }
-.fondo-back {
-  background-color: #0c0b0b ;
-  opacity: 0.9;
-  padding: 15px;
-  border-radius: 10px;
-}
-
-
