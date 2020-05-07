@@ -19,13 +19,13 @@ L.control.scale().addTo(map);
 //var marcador = L.marker([5.3163164, -73.8134494]).addTo('map').bindPopup('Hola').openPopup();
 for (var i = 0; i < lati.length; i++) {
 
-    L.marker([lati[i], longi[i]], { icon: customIcon }).addTo(map);
-    //.bindPopup('Zona '+i).openPopup();
+    L.marker([lati[i], longi[i]], { icon: customIcon }).addTo(map).bindPopup('Prueba'+i).openPopup();
 
 }
 for (var i = 0; i < latiS.length; i++) {
 
     L.marker([latiS[i], longiS[i]], { icon: customIcon2 }).addTo(map);
-    //.bindPopup('Zona '+i).openPopup();
+    
+    //.bindPopup('Zona skjadhkjasdjasdjasgdjhasdjhasdjhasvdhjasvdhavsghdavsdjvasjasjvasdjvasjhdvasjdvasjdv '+i).openPopup();
 
 }
