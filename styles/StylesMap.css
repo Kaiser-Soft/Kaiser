@@ -1,0 +1,7 @@
+#map{ 
+    height: 600px; 
+    margin-top:40px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 1px #A09C9C;
+    border: solid 1px #000000;
+}

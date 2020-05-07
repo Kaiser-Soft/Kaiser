@@ -1,0 +1,77 @@
+*{
+	background-color: #f2f2f2;
+	margin: 0;
+    font-family: monospace;
+}
+.formulario{
+	border: solid 1px #f78472;
+    border-radius: 10px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	width:400px;
+	margin-left:-200px;
+	height:450px;
+	margin-top:-250px;
+	padding:5px;
+    text-align: center;
+    border-radius: 5px;
+}
+.inputs-inserts{
+    margin: 10px;
+    text-align: center;
+	width: 150px;
+	height: 30px;
+	border-radius: 5px;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    color: gray;
+    transition: border 1s, box-shadow 0.3s;
+    border: solid 1px #f78472;
+}
+.titulo-form{
+    color:#fff;
+    background-color: #f78472;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    
+}
+.inputs-inserts:hover{
+    box-shadow: 3px 3px 1px #757474;
+    border-radius: 7px;
+    /*animation: anim 2s ease infinite;*/
+    box-shadow: inset 1px 1px 3px #f78472;
+    
+}
+.text-termn{
+    margin: 10px;
+}
+.btn-env{
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    background-color: #f78472;
+    transition: border 1s, background 2s;
+    color: #fff;
+    border:solid 1px #f78472;
+}
+.btn-env:hover{
+    background-color: #f78472;
+    border : solid 1px black;
+    box-shadow: 1px 1px 3px #f78472;
+}
+.btn-env:active{
+    box-shadow: inset 1px 1px 3px #000;
+}
+@media(max-width: 400px){
+	.formulario{
+		width: 80%;
+        height: 640px;
+        display: inline-block;
+        left: 230px;
+        top: 270px;
+	}	
+}
