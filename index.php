@@ -83,7 +83,7 @@
 
                                 <h1 class="cover-heading titulo-k">Kaiser</h1>
                                 <p class="lead parrafo-k">Bienvenidos a Kaiser página de registro de accidentes</p>
-                                <a href="" class="btn btn-lg btn-secondary">Registrar</a>
+                                <a href="Registro.php" class="btn btn-lg btn-secondary">Registrar</a>
                             </div>
                         </div>
                             <p class="EspacioBlanco"></p>
