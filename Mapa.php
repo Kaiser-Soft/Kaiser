@@ -62,7 +62,7 @@
 						</a>
 					</li>
 					<li class="nav-item mt-1 mb-1">
-						<a href="Reporte.php" class="btn btn-outline-dark mr-3">
+						<a href="#" class="btn btn-outline-dark mr-3" data-toggle="modal" data-target="#exampleModalScrollable">
 							<i class="fas fa-car-crash"></i>
 							Reporte
 						</a>
@@ -86,7 +86,31 @@
                 <a href="#"> Kaiser</a>
             </div>
         </footer>
-        <!-- Footer -->
+		<!-- Footer -->
+		<!-- Ventana -->
+		<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable" role="document">
+			<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalScrollableTitle">Reporte | Kaiser</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+			 	<form action="" method="post" class="text-center">
+					 <input type="text" placeholder="Pregunta" class="m-3">
+					 <input type="text" placeholder="Pregunta">
+				 </form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				<button type="button" class="btn btn-primary">Enviar</button>
+			</div>
+			</div>
+		</div>
+		</div>
+		<!-- fin de ventana -->
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="loader.js"></script> 
     </body> 
