@@ -77,7 +77,7 @@
 			</div>
         </nav>
         <div id="map"></div>
-        <script src="ScriptsJS/Location.js"></script>
+        <!-- <script src="ScriptsJS/Location.js"></script> -->
         <script src="ScriptsJS/Mapa.js"></script> 
         </div>
         <!-- Footer -->
@@ -98,20 +98,50 @@
 				</button>
 			</div>
 			<div class="modal-body">
-			 	<form action="" method="post" class="text-center">
+			 	<form action="" method="post" class="text-center d-b">
+				 	<label for="">¿Hubo presencia de accidentes?</label>
 					 <input type="text" placeholder="Pregunta" class="m-3">
-					 <input type="text" placeholder="Pregunta">
+					 <br>
+					 <label for="">¿Tipo de accidente?</label>
+					 <br>
+					 <input type="text" placeholder="Pregunta" class="m-3">
+					 <div id="localizacion"></div>
+					 <div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+						<button type="submit" class="btn btn-primary">Enviar</button>
+					 </div>
 				 </form>
 			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-				<button type="button" class="btn btn-primary">Enviar</button>
-			</div>
 			</div>
 		</div>
 		</div>
+		
 		<!-- fin de ventana -->
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="loader.js"></script> 
+		<script>
+		if ("geolocation" in navigator) { 
+			navigator.geolocation.getCurrentPosition(function (position) {
+				alert("funciona");
+				console.log("Tu  localización nLat : " + position.coords.latitude + " nLang :" + position.coords.longitude);
+				var latit = document.createElement("input");
+				latit.setAttribute("type", "hidden");
+				latit.setAttribute("class", "lati");
+				latit.setAttribute("value", position.coords.latitude);
+				latit.setAttribute("name", "latit");
+				document.body.appendChild(latit);
+				var longi = document.createElement("input");
+				longi.setAttribute("type", "hidden");
+				longi.setAttribute("class", "longi");
+
+				longi.setAttribute("value", position.coords.longitude);
+				longi.setAttribute("name", "longit");
+				document.getElementById("localizacion").appendChild(longi);
+				document.getElementById("localizacion").appendChild(latit);
+			});
+		} else {
+			console.log("Browser doesn't support geolocation!");
+		}
+	</script>
     </body> 
  </html>
