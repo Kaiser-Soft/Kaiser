@@ -1,6 +1,21 @@
 <?php
     require ("conMap.php");
-    require ("conMapSudo.php");
+	require ("conMapSudo.php");
+	include ("conexion.php");
+?>
+<?php
+
+	$email=$_SESSION['email'];
+	$queryid = mysqli_query($conect,"SELECT ID FROM Registro WHERE email='$email'");
+		if (mysqli_num_rows($queryid)>0) {
+			$data = mysqli_fetch_array($queryid);
+			$iduser=$data["ID"];
+			
+		
+		}else{
+			echo "<script>alert('¡No puedo saber quien eres!')</script>";
+		}
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -98,14 +113,15 @@
 				</button>
 			</div>
 			<div class="modal-body">
-			 	<form action="" method="post" class="text-center d-b">
-				 	<label for="">¿Hubo presencia de accidentes?</label>
-					 <input type="text" placeholder="Pregunta" class="m-3">
+			 	<form action="insert.php" method="post" class="text-center d-b">
+				 	<label>¿Hubo presencia de accidentes?</label>
+					 <input type="text" placeholder="Pregunta" class="m-3" name="pregunta1">
 					 <br>
-					 <label for="">¿Tipo de accidente?</label>
+					 <label>¿Tipo de accidente?</label>
 					 <br>
-					 <input type="text" placeholder="Pregunta" class="m-3">
+					 <input type="text" placeholder="Pregunta" class="m-3" name="pregunta2">
 					 <div id="localizacion"></div>
+				 	 <input type="hidden" name="usuario" value="<?php echo $iduser; ?>">
 					 <div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 						<button type="submit" class="btn btn-primary">Enviar</button>

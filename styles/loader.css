@@ -8,7 +8,8 @@
 #contenedor_carga{
   background-color: rgba(250, 240, 245, 1);
   height: 100%;
-  width: 100%;
+  width:  100%;
+  margin-top: -10px;
   position: fixed;
   -webkit-transition: all 1s ease;
   -o-transition: all 1s ease;

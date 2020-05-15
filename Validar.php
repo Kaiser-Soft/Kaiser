@@ -8,6 +8,7 @@ session_start();
 		$log = mysqli_query($conect,"SELECT * FROM Registro WHERE email='$usuario' AND Password='$pw'");
 		if (mysqli_num_rows($log)>0) {
 			$row = mysqli_fetch_array($log);
+			
 			$_SESSION["email"]=$row['email'];
 			header("location:inicio.php");
 		}

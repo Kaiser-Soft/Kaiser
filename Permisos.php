@@ -1,6 +1,7 @@
 <?php
       session_start();
       error_reporting(0);
+      $varsito=$_SESSION["contra"];
       $varsesion= $_SESSION['email'];
       if ($varsesion== null || $varsesion= '') {
           echo '<script type="text/javascript">
