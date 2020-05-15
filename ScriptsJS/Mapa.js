@@ -22,10 +22,10 @@ for (var i = 0; i < lati.length; i++) {
     L.marker([lati[i], longi[i]], { icon: customIcon }).addTo(map).bindPopup("<center><img src='../K/icon.png' width='30px' height='30px'></center>"+"<br>"+"<b>Usuario: </b>"+ user[i]+"<br>"+"<b>Tipo de accidente: </b>"+p2[i]+"<br>"+"<b>Presencia de muertos o heridos: </b>"+p1[i]).openPopup();
 
 }
-for (var i = 0; i < latiS.length; i++) {
+// for (var i = 0; i < latiS.length; i++) {
 
-    L.marker([latiS[i], longiS[i]], { icon: customIcon2 }).addTo(map);
+//     L.marker([latiS[i], longiS[i]], { icon: customIcon2 }).addTo(map);
     
-    //.bindPopup('Zona skjadhkjasdjasdjasgdjhasdjhasdjhasvdhjasvdhavsghdavsdjvasjasjvasdjvasjhdvasjdvasjdv '+i).openPopup();
+//     //.bindPopup('Zona skjadhkjasdjasdjasgdjhasdjhasdjhasvdhjasvdhavsghdavsdjvasjasjvasdjvasjhdvasjdvasjdv '+i).openPopup();
 
-}
+// }

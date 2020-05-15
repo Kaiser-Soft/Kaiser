@@ -1,6 +1,5 @@
 <?php
 require("conMap.php");
-require("conMapSudo.php");
 include("conexion.php");
 ?>
 <?php
@@ -182,14 +181,14 @@ if (mysqli_num_rows($queryid) > 0) {
 		var d = new Date();
 		console.log(d.getHours() + ":" + d.getMinutes());
 
-		function tiempo() {
-			if (d.getHours() == 18) {
-				mostrarVentana();
+		// function tiempo() {
+		// 	if (d.getHours() == 18) {
+		// 		mostrarVentana();
 				
-			}
-		}
-		setInterval('mostrarVentana()',300000);
-		setInterval('ocultarVentana()',60000)
+		// 	}
+		// }
+		setInterval('mostrarVentana()',60000);
+		// setInterval('ocultarVentana()',6000)
 		function mostrarVentana()
 		{
 			var ventana = document.getElementById('miVentana');
