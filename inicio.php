@@ -86,7 +86,7 @@
 			<div class="carousel-inner" style="border-radius: 10px; box-shadow: 1px 1px 5px #A09C9C;">
 				<div class="carousel-item active">
 					<!--<img src="imgs/prueba.jpeg" class="d-block w-100" alt="...">-->
-					<video src="imgs/giphy.mp4" class="d-block w-100" autoplay loop></video>
+					<img src="imgs/mpk.png" class="d-block w-100">
 				</div>
 				<div class="carousel-item">
 					<img src="imgs/map1.png" class="d-block w-100" alt="...">
@@ -105,23 +105,36 @@
 			</a>
 		</div>
 			<!--CONTENIDO DE LAS CARDS-->
+			<center>
 			<div class="card-deck col-sm-12 row" style="margin-top:20px;">
 
+                    
+                </div>
+                <div class="card" style="width: 60rem; box-shadow:5px 5px #A09C9C; border:solid 1px #000;">
+                        <img src="imgs/ubK.png" class="card-img-top" alt="..." width="1720px" height="720px">
+                        <div class="card-body">
+                        <h5 class="card-title">Ubicación</h5>
+                        <p class="card-text">Para mejor experiencía y presición en nuestros servicios cuando se te pida acceso a tu ubicación aceptala.</p>
+                        </div>
+                </div>
+				<div class="card-deck col-sm-12 row" style="margin-top:20px;">
+
                     <div class="card" style="width: 18rem; box-shadow:5px 5px #A09C9C; border:solid 1px #000;">
+                            <img src="imgs/alerta.png" class="card-img-top" alt="..."  width="10px" height="200px">
+                            <div class="card-body">
+                                <h5 class="card-title">Alerta</h5>
+                        <p class="card-text">Mostraremos esta alerta cada cierto tiempo para que no olvides siempre estar al pendiente.</p>
+                        </div>
+				</div>
+				<div class="card" style="width: 18rem; box-shadow:5px 5px #A09C9C; border:solid 1px #000;">
                             <img src="images/marker-icon-2x.png" class="card-img-top" alt="..."  width="10px" height="200px">
                             <div class="card-body">
                                 <h5 class="card-title">Puntos</h5>
-                        <p class="card-text">Si vez este punto en tu mapa esto indicara que algun usuario reporto un accidente en ese lugar</p>
-                        </div>
+						<p class="card-text">Si vez este punto en tu mapa esto indica que un usuario como tú reporto un accidente</p>
+						<a href="Mapa.php" class="btn btn-outline-dark mr-3">¡Vamos!</a>
                 </div>
-                <div class="card" style="width: 18rem; box-shadow:5px 5px #A09C9C; border:solid 1px #000;">
-                        <img src="imgs/ubi.png" class="card-img-top" alt="..." width="500px" height="280px">
-                        <div class="card-body">
-                        <h5 class="card-title">Ubicación</h5>
-                        <p class="card-text">Para mejor presición se te pedira la Ubicación en tu dispositivo, te recomendamos siempre aceptarla</p>
-                        </div>
-                </div>
-        </div>
+                
+        </div></center>
 			<!--FIN DE CONTENIDO CADS-->
 		</div>
 	</div>

@@ -34,7 +34,7 @@
 		}
 		else {
 				$sql = "INSERT INTO Registro (email, Nombres, Apellidos,TipoDoc, NumDoc, NumTel, Password) /** columnas  de labase datos**/
-				VALUES ('".$_POST["Email"]."' , '".$_POST["Nombres"]."' , '".$_POST["Apellidos"]."','".$_POST["TipDocu"]."', '".$_POST["NumDocumento"]."','".$_POST["NumCelular"]."' , '".$_POST["password"]."')"; // valores del formulario
+				VALUES ('".$_POST["Email"]."' , '".$_POST["Nombres"]."' , '".$_POST["Apellidos"]."','".$_POST["TipDocu"]."', '".$_POST["NumDocumento"]."','".$_POST["NumCelular"]."' , '".md5($_POST["password"])."')"; // valores del formulario
 
 				if (mysqli_query($conn, $sql)) {
 					header('Location:Login.php');

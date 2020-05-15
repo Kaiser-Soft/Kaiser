@@ -3,7 +3,7 @@ session_start();
 	include 'Server.php';
 	if (isset($_POST['login'])) {
 		$usuario = $_POST['email'];
-		$pw = $_POST['contra'];
+		$pw = md5($_POST['contra']);
 		//password_verify($password, hash)
 		$log = mysqli_query($conect,"SELECT * FROM Registro WHERE email='$usuario' AND Password='$pw'");
 		if (mysqli_num_rows($log)>0) {

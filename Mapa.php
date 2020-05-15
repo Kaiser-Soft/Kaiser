@@ -183,12 +183,13 @@ if (mysqli_num_rows($queryid) > 0) {
 		console.log(d.getHours() + ":" + d.getMinutes());
 
 		function tiempo() {
-			if (d.getHours() == 21) {
-				alert("Funciona");
+			if (d.getHours() == 18) {
+				mostrarVentana();
 				
 			}
 		}
-		setInterval('mostrarVentana()',60000);
+		setInterval('mostrarVentana()',300000);
+		setInterval('ocultarVentana()',60000)
 		function mostrarVentana()
 		{
 			var ventana = document.getElementById('miVentana');

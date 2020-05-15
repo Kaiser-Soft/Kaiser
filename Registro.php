@@ -58,7 +58,7 @@
             <p class="text-termn"><input type="checkbox" class="input-check" required> Acepta terminos y condiciones</p>
 	    	
 	    	<input type="submit" name="Enviar" class="btn-env">
-            <br><a href="Login.php">Iniciar Sesion</a> 
+            <br><a href="Login.php" style="color: #000000;">Iniciar Sesion</a> 
     </form>
     <script src="loader.js"></script> 
 </body>

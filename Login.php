@@ -52,7 +52,7 @@
 		  <input type="text" placeholder="Email" class="inputs-inserts" name="email">
 		  <input type="password" placeholder="Contraseña" class="inputs-inserts" name="contra">
 		  <input type="submit" value="Iniciar Sesión" class="btn-env" name="login">
-        <br><a href="Registro.php">Registrar Aqui</a>
+        <br><a href="Registro.php" style="color: #000000;">Registrar Aqui</a>
 	  </div>
 	</form>
 	<script src="loader.js"></script> 

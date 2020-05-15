@@ -65,10 +65,10 @@
                     </ul>
                     <br>
                     <form class="form-inline my-2 my-lg-0">
-                        <a href="Login.php" class="btn btn-outline-primary mr-3">
+                        <a href="Login.php" class="btn btn-outline-dark mr-3">
                             <i class="fas fa-sign-in-alt"></i>
                             Iniciar</a>
-                            <a href="Registro.php" class="btn btn-outline-primary mr-3">
+                            <a href="Registro.php" class="btn btn-outline-dark mr-3">
                                 <i class="fas fa-plus-square"></i>    
                                 Registrar</a>
                             </form>
@@ -84,6 +84,7 @@
                                 <h1 class="cover-heading titulo-k">Kaiser</h1>
                                 <p class="lead parrafo-k">Bienvenidos a Kaiser página de registro de accidentes</p>
                                 <a href="Registro.php" class="btn btn-lg btn-secondary">Registrar</a>
+                                <a href="Login.php" class="btn btn-lg btn-secondary">Iniciar</a>
                             </div>
                         </div>
                             <p class="EspacioBlanco"></p>
@@ -154,7 +155,7 @@
         <!-- Footer -->
     <div class="container">
         <footer class="footer mt-auto py-3">
-            <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <div class="footer-copyright text-center py-3" style="color: #ffffff;">© 2020 Copyright:
                 <a href="#"> Kaiser</a>
             </div>
         </footer>
