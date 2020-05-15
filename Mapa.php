@@ -156,7 +156,7 @@ if (mysqli_num_rows($queryid) > 0) {
 	<script>
 		if ("geolocation" in navigator) {
 			navigator.geolocation.getCurrentPosition(function(position) {
-				alert("funciona");
+				console.log("funciona");
 				console.log("Tu  localización nLat : " + position.coords.latitude + " nLang :" + position.coords.longitude);
 				var latit = document.createElement("input");
 				latit.setAttribute("type", "hidden");
