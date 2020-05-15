@@ -109,14 +109,15 @@
 			<div class="card-deck col-sm-12 row" style="margin-top:20px;">
 
                     
-                </div>
-                <div class="card" style="width: 60rem; box-shadow:5px 5px #A09C9C; border:solid 1px #000;">
-                        <img src="imgs/ubK.png" class="card-img-top" alt="..." width="1720px" height="720px">
+                
+                <div class="card" style="width: 18rem; box-shadow:5px 5px #A09C9C; border:solid 1px #000;">
+                        <img src="imgs/ubK.png" class="card-img-top" alt="..." >
                         <div class="card-body">
                         <h5 class="card-title">Ubicación</h5>
                         <p class="card-text">Para mejor experiencía y presición en nuestros servicios cuando se te pida acceso a tu ubicación aceptala.</p>
                         </div>
-                </div>
+				</div>
+			</div>
 				<div class="card-deck col-sm-12 row" style="margin-top:20px;">
 
                     <div class="card" style="width: 18rem; box-shadow:5px 5px #A09C9C; border:solid 1px #000;">
@@ -130,18 +131,19 @@
                             <img src="images/marker-icon-2x.png" class="card-img-top" alt="..."  width="10px" height="200px">
                             <div class="card-body">
                                 <h5 class="card-title">Puntos</h5>
-						<p class="card-text">Si vez este punto en tu mapa esto indica que un usuario como tú reporto un accidente</p>
-						<a href="Mapa.php" class="btn btn-outline-dark mr-3">¡Vamos!</a>
-                </div>
+								<p class="card-text">Si vez este punto en tu mapa esto indica que un usuario como tú reporto un accidente</p>
+								<a href="Mapa.php" class="btn btn-outline-dark mr-3">¡Vamos!</a>
+                			</div>
                 
-        </div></center>
+				</div>
+			</center>
 			<!--FIN DE CONTENIDO CADS-->
 		</div>
 	</div>
 	
 	<!-- Footer -->
 	<footer class="page-footer font-small">
-		<div class="footer-copyright text-center py-3">© 2019 Copyright:
+		<div class="footer-copyright text-center py-3" style="color:#000000;">© 2020 Copyright:
 			<a href="#"> Kaiser</a>
 		</div>
 	</footer>
