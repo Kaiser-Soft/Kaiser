@@ -5,3 +5,35 @@
     box-shadow: 4px 4px 1px #A09C9C;
     border: solid 1px #000000;
 }
+
+#miVentana{
+    box-shadow: 2px 2px 2px #000000;
+    background-color: #f78472;
+	border: solid 1px #f78472;
+    border-radius: 10px;
+	position: absolute;
+	top:10%;
+	left:50%;
+	width:400px;
+	margin-left:-200px;
+	height:250px;
+	margin-top:-200px;
+	padding:5px;
+    text-align: center;
+    border-radius: 5px;
+    animation: bounceInDown;
+}
+#miVentana p{
+    margin:10px;
+}
+#miVentana a{
+    transition: box-shadow 0.5s, border 0.5s;
+}
+#miVentana a:hover{
+    box-shadow: 3px 3px 3px #000000;
+    border:solid 1px #000000;
+}
+#miVentana a:focus{
+    box-shadow: inset 3px 3px 3px #000000;
+    border:solid 1px #000000;
+}
