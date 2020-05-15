@@ -19,7 +19,7 @@ L.control.scale().addTo(map);
 //var marcador = L.marker([5.3163164, -73.8134494]).addTo('map').bindPopup('Hola').openPopup();
 for (var i = 0; i < lati.length; i++) {
 
-    L.marker([lati[i], longi[i]], { icon: customIcon }).addTo(map).bindPopup("<center><img src='../K/icon.png' width='30px' height='30px'></center>"+"<br>"+"<b>Usuario: </b>"+ user[i]+"<br>"+"<b>Tipo de accidente: </b>"+p2[i]+"<br>"+"<b>Presencia de muertos: </b>"+p1[i]).openPopup();
+    L.marker([lati[i], longi[i]], { icon: customIcon }).addTo(map).bindPopup("<center><img src='../K/icon.png' width='30px' height='30px'></center>"+"<br>"+"<b>Usuario: </b>"+ user[i]+"<br>"+"<b>Tipo de accidente: </b>"+p2[i]+"<br>"+"<b>Presencia de muertos o heridos: </b>"+p1[i]).openPopup();
 
 }
 for (var i = 0; i < latiS.length; i++) {

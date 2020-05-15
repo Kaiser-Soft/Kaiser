@@ -57,12 +57,13 @@
 							Mapa
 						</a>
 					</li>
-					<li class="nav-item">
+					<!-- Se comenta el reporte debido a que se que cambio de lugar y ahora se posiciona en el mapa -->
+					<!-- <li class="nav-item">
 						<a href="Reporte.php" class="btn btn-outline-dark mr-3 mt-1 mb-1">
 							<i class="fas fa-car-crash"></i>
 							Reporte
 						</a>
-					</li>
+					</li> -->
 				</ul>
 				<br>
 				<form class="form-inline my-2 my-lg-0 mt-1 mb-1">

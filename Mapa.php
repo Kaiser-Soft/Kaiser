@@ -132,12 +132,12 @@ if (mysqli_num_rows($queryid) > 0) {
 				</div>
 				<div class="modal-body">
 					<form action="insert.php" method="post" class="text-center d-b">
-						<label>¿Hubo presencia de accidentes?</label>
-						<input type="text" placeholder="Pregunta" class="m-3" name="pregunta1">
+						<label>¿Hubo presencia de muertos o heridos?</label>
+						<input type="text" placeholder="Respuesta" class="m-3" name="pregunta1">
 						<br>
 						<label>¿Tipo de accidente?</label>
 						<br>
-						<input type="text" placeholder="Pregunta" class="m-3" name="pregunta2">
+						<input type="text" placeholder="Respuesta" class="m-3" name="pregunta2">
 						<div id="localizacion"></div>
 						<input type="hidden" name="usuario" value="<?php echo $iduser; ?>">
 						<div class="modal-footer">
