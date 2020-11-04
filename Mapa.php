@@ -51,6 +51,7 @@ if (mysqli_num_rows($queryid) > 0) {
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script src="https://kit.fontawesome.com/6087628f18.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="styles/StylesIndex.css">
+	<script src="dist/leaflet-heat.js"></script>
 </head>
 
 <body style="background-color:#E3E2E2;">
